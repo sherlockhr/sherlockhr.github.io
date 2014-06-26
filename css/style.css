@@ -1202,22 +1202,22 @@ only screen and (min-resolution: 2dppx)                      /* 标准 */
 	.list-lietou {
 	background:url(img/lietou_2x.png) left top no-repeat;
 	padding:0 0 0 45px;
-	background-size:80px 80px;}	
+	background-size:40px 40px;}	
 
 	.list-jiaofu {
 		background:url(img/jiaofu_2x.png) left top no-repeat;
-		background-size:70px 70px;
+		background-size:35px 35px;
 	}
 	.list-goutong {
 		background:url(img/goutong_2x.png) left top no-repeat;
-		background-size:70px 70px;
+		background-size:35px 35px;
 		}
 	.list-fuwu {
 		background:url(img/fuwu_2x.png) left top no-repeat;
-		background-size:70px 70px;
+		background-size:35px 35px;
 		}
 	.list-rencaiku {
-		background:url(img/rencaiku_2x.png) left top no-repeat;
-		background-size:70px 70px;
+		background-image:url(img/rencaiku_2x.png) left top no-repeat;
+		background-size:35px 35px;
 	}
 }
