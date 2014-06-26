@@ -1194,11 +1194,15 @@ ul.list li, .featured-wrap ul.list li {
   
 /* ------------ Retina ------------ */
 @media only screen and (-o-min-device-pixel-ratio: 2/1), /* Opera */
-only screen and (min--moz-device-pixel-ratio: 2),        /* Firefox 16 之前 */
+only screen and (min--moz-device-pixel-ratio: 2),        /* Firefox 16 Before */
 only screen and (-webkit-min-device-pixel-ratio: 2),    /* Webkit */
-only screen and (min-resolution: 240dpi),                    /* 标准 */
-only screen and (min-resolution: 2dppx)                      /* 标准 */
+only screen and (min-resolution: 240dpi),                    /* Standard */
+only screen and (min-resolution: 2dppx)                      /* Standard */
 {
+	.header .home-logo {
+    background: url("img/large-logo_2x.png") no-repeat; 
+	background-size:250px 72px;}
+	
 	.list-lietou {
 	background:url(img/lietou_2x.png) left top no-repeat;
 	padding:0 0 0 45px;
