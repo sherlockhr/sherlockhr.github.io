@@ -4,13 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Sherlock HR consulting limited. 深圳夏洛克人力资源咨询有限公司 - 提供专业的人力资源, 猎头咨询服务.</title>
 <link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/animation.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 </head>
 
 
 <body class="home">
 	
 
-	<div class="master-wrap">
+	<div id="shTopArea" class="master-wrap">
 		<div class="full-wrap top-bar-wrap">
 	<div class="wrap">
 		<div class="row">
@@ -24,7 +27,7 @@
 		<div class="full-wrap featured-wrap featured-trial" data-validation-url="/wizard_signup" data-validation-rules-url="/user/validation_rules">
 			<div class="full-wrap header">
 				<div class="wrap">
-					<div class="row">
+					<div class="row top_bottom animateDelay1">
 						<div class="block-2 site-logo-wrap">
 							<a class="home-logo">LOGO</a>
 
@@ -32,9 +35,9 @@
 						</div><!--end .block-2-->
 
 						<ul class="nav hide right mt-10">
-							<li  class="current"><a href="/home">首页</a></li>
-							<li><a href="/features">关于</a></li>
-							<li><a href="/plans">联系</a></li>
+							<li id="shHomeLink"  class="current"><a>首页</a></li>
+							<li id="shAboutLink"><a>关于</a></li>
+							<li id="shContactLink"><a>联系我们</a></li>
 							
 						</ul>
 					</div><!--end .row-->
@@ -43,7 +46,7 @@
 
 			<div class="wrap">
 				<div class="row">
-					<div class="block-12">
+					<div class="block-12 pop">
 						<h1 class="mb-20">高效，协作，迅速响应的人力资源解决方案.</h1>
 						<h3 class="light mb-20">提供迅捷的人力资源咨询, 猎头, 人力资源外包服务.</h3>
 						
@@ -54,7 +57,7 @@
 
 	
 	
-	<div class="full-wrap enterprise-panel">
+	<div id="shAboutArea" class="full-wrap enterprise-panel">
 		<div class="enterprise-bg">
 			<div class="enterprise-intro-bg"></div>
 			<div class="enterprise-tools-bg"></div>
@@ -71,7 +74,7 @@
 					</blockquote>
 
 					
-				<a class="btn blue" href="/enterprise">联系我们</a>
+				<div class="align-right sh-contact-btn"><a id="shContactBtn" class="btn blue">联系我们</a></div>
 
 					
 				</div><!--end .block-6-->
@@ -79,12 +82,12 @@
 
 
 				<div class="block-6 last enterprise-tools">
-					<h2 class="light">猎头服务</h2>
+					<h2 class="light list-lietou">猎头服务</h2>
 					<ul>
-						<li><span class=""></span>快速的人力资源交付时间</li>
-						<li><span class=""></span>即时的相应与沟通</li>
-						<li><span class=""></span>定制化的服务</li>
-						<li><span class=""></span>完整的企业人才库</li>
+						<li class="list-jiaofu"><span class=""></span>快速的人力资源交付时间</li>
+						<li class="list-goutong"><span class=""></span>即时的相应与沟通</li>
+						<li class="list-fuwu"><span class=""></span>定制化的服务</li>
+						<li class="list-rencaiku"><span class=""></span>完整的企业人才库</li>
 					</ul>
 				</div><!--end .block-6-->
 			</div><!--end .row-->
@@ -97,11 +100,31 @@
 
 			<div class="row">
 				<div class="block-12">
-					
+					<div class="sh-com-links">
+                    	<ul>
+                        	<li><a href="#"><img src="css/img/com/sharp.jpg" width="250" /></a></li>
+                            <li><a href="#"><img src="css/img/com/philip.jpg" width="250" /></a></li>
+                            <li><a href="#"><img src="css/img/com/whir.jpg" width="250" /></a></li>
+                        </ul>
+                    </div>
 				</div>
 			</div>
 		</div>
 	</div>
+    
+    
+    <div id="shContactArea" class="full-wrap companies-2 companies-2-light sh-contact-wrap">
+    	<div class="wrap align-center pad-b-contact">
+			<h2 class="light">联系我们</h2>
+
+			<div class="row">
+				<div class="block-12">
+					<img src="css/img/com/email.png" width="100" />
+                    <div class="sh-email-add">商务洽谈请发件至: <a href=mailto:contact@sherlockhr.com>contact@sherlockhr.com</a></div>
+				</div>
+			</div>
+		</div>
+    </div>
 
 	
 
@@ -122,7 +145,7 @@
 				</div>
 
 				<div class="block-2 right align-right back-to-top last">
-					<a href="#">返回顶部 &uarr;</a>
+					<a id="shBackToTop" href="#">返回顶部 &uarr;</a>
 				</div>
 			</div>
 		</div><!--end .wrap-->
@@ -135,3 +158,4 @@
 
 </body>
 </html>
+
